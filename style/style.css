@@ -1,0 +1,89 @@
+body{
+    width: auto;
+    height: auto;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+    color: white;
+}
+header{
+    width: auto;
+    height: 15dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid white;
+}
+main{
+    width: auto;
+    min-height: 75dvh;
+    max-height: auto;
+}
+footer{
+    width: auto;
+    height: auto;
+    border-top: 1px solid white;
+}
+h1{
+    text-align: center;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-self: center;
+}
+img{
+    display: flex;
+}
+a{
+    display: block;
+    text-decoration: none;
+    color: rgb(252, 252, 252);
+    margin: auto;
+    padding: 10px;
+}
+section{
+    height: 60dvh;
+    width: 100%;
+    display: block;
+}
+p{
+    margin: 10px;
+
+}
+#games{
+    height: 50dvh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    justify-content: space-around;
+}
+#populares{
+    width: 225px;
+    height: 225px;
+    display: block;
+    text-align: center;
+}
+#jogos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#sobre_nos{
+    display: flex;
+    flex-direction: column;
+}
+#sobre_nos h2{
+    text-align: center;
+}
+@media (max-width: 482px) {
+    #populares{
+        width: 150px;
+        height: 150px;
+    }
+    img{
+        width: 125px;
+    }
+}

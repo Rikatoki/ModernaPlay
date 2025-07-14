@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}Moderna Play{% endblock %}
+
+{% block body %}
+<main>
+    <h2>Bem vindo {{session['username']}}!</h2>
+    <section>
+        <h3>Jogos Populares</h3>
+        <div id="games">{% include 'jogos_populares.html'%}</div>
+    </section>
+</main>
+{% endblock %}

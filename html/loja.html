@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}Loja{%endblock%}
+{% block body %}
+<main>
+    <div id="jogos">
+        {% for jogo in jogos %}
+        <div id="populares">
+            <a href="{{jogo.url}}" rel="external" target="_blank">
+                <img src="{{jogo.img}}" alt="Capa do jogo" width="200px">
+                <details>{{jogo.nome}}</details>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</main>
+{% endblock %}
