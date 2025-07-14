@@ -26,6 +26,11 @@ def loja():
 def sobre():
     return render_template('sobre.html')
 
+@client_view.route('/Contatos')
+def redes():
+    return render_template('redes.html')
+
+
 @client_view.route('/login', methods=['GET','POST'])
 def login():
     if request.method.upper() == 'POST':

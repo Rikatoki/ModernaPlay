@@ -87,3 +87,63 @@ p{
         width: 125px;
     }
 }
+
+
+
+
+    .contact-section {
+      max-width: 700px;
+      margin: 50px auto;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .contact-section h2 {
+      margin-top: 0;
+      font-size: 28px;
+      color: #bdb9b9;
+    }
+
+    .contact-info {
+      margin-top: 20px;
+      line-height: 1.8;
+    }
+
+    .contact-info i {
+      margin-right: 10px;
+      color: #555;
+    }
+
+    .social-links {
+      margin-top: 25px;
+      display: flex;
+      gap: 15px;
+    }
+
+    .social-links a {
+      text-decoration: none;
+      color: #fafafa;
+      padding: 10px 20px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: 0.3s ease;
+    }
+
+    .github {
+      background-color: #24292e;
+    }
+
+    .github:hover {
+      background-color: #333;
+    }
+
+    .discord {
+      background-color: #5865F2;
+    }
+
+    .discord:hover {
+      background-color: #4752c4;
+    }
