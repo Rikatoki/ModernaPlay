@@ -1,13 +1,15 @@
 {% extends 'base.html' %}
-{% block title %}Loja{%endblock%}
+{% block title %}Loja{% endblock %}
+
 {% block body %}
-<main>
-    <div id="jogos">
+<main class="main-container">
+    <h2 class="section-title">Nossa Loja</h2>
+    <div class="games-grid">
         {% for jogo in jogos %}
-        <div id="populares">
+        <div class="game-card">
             <a href="{{jogo.url}}" rel="external" target="_blank">
-                <img src="{{jogo.img}}" alt="Capa do jogo" width="200px">
-                <details>{{jogo.nome}}</details>
+                <img src="{{jogo.img}}" alt="Capa do jogo {{jogo.nome}}" class="game-image">
+                <details class="game-name">{{jogo.nome}}</details>
             </a>
         </div>
         {% endfor %}

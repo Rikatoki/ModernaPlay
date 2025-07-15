@@ -1,37 +1,51 @@
 //Codigo do login
-let lastClickedButton = null
+let lastClickedButton = null;
 
-// Captura qual botão foi clicado
 document.querySelectorAll('#loginForm button[type="submit"]').forEach(button => {
     button.addEventListener('click', function () {
-        lastClickedButton = this
-    })
-})
+        lastClickedButton = this;
+    });
+});
 
 document.getElementById('loginForm').addEventListener('submit', async function (e) {
-    e.preventDefault()
+    e.preventDefault();
 
-    const form = e.target
-    const data = new FormData(form)
-
-    // Usa o formaction do botão clicado (não do form)
-    const action = lastClickedButton?.getAttribute('formaction') || form.getAttribute('action')
+    const form = e.target;
+    const data = new FormData(form);
+    const action = lastClickedButton?.getAttribute('formaction') || form.getAttribute('action');
 
     try {
         const response = await fetch(action, {
             method: 'POST',
             body: data
-        })
+        });
 
-        const result = await response.json()
+        let result;
+        try {
+            result = await response.json();
+        } catch {
+            throw new Error("Resposta não é JSON.");
+        }
 
         if (response.ok) {
-            window.location = result.redirect
+            window.location.href = result.redirect;
         } else {
-            document.getElementById('errorMsg').innerText = result.mensagem || 'Erro ao processar.'
+            document.getElementById('errorMsg').innerText = result.mensagem || 'Erro ao processar.';
         }
     } catch (err) {
-        document.getElementById('errorMsg').innerText = 'Erro de conexão ou servidor.'
-        console.error(err)
+        document.getElementById('errorMsg').innerText = 'Erro de conexão ou servidor.';
+        console.error(err);
     }
-})
+});
+
+console.log("Script da Moderna Play carregado com sucesso ✅");
+
+// Animação para links do header (opcional)
+document.querySelectorAll('.main-nav a').forEach(link => {
+    link.addEventListener('mouseenter', () => {
+        link.style.transform = 'scale(1.05)';
+    });
+    link.addEventListener('mouseleave', () => {
+        link.style.transform = 'scale(1)';
+    });
+});

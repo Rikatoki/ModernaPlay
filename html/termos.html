@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}Termos de Uso{% endblock %}
+
+{% block body %}
+<main class="legal-section">
+    <div class="container">
+        <h2>Termos de Uso</h2>
+        <p>Bem-vindo à Moderna Play! Ao acessar e utilizar este site, você concorda com os termos e condições abaixo.</p>
+
+        <h3>1. Uso do Site</h3>
+        <p>Você se compromete a utilizar este site apenas para fins legais e de acordo com todas as leis aplicáveis. É proibido utilizar o site para fins fraudulentos ou para realizar qualquer atividade que possa prejudicar terceiros.</p>
+
+        <h3>2. Propriedade Intelectual</h3>
+        <p>Todo o conteúdo disponível neste site, incluindo textos, imagens, logos e design, são propriedade da Moderna Play e estão protegidos por leis de direitos autorais.</p>
+
+        <h3>3. Modificações</h3>
+        <p>Reservamo-nos o direito de modificar estes Termos de Uso a qualquer momento. As alterações serão publicadas nesta página e entrarão em vigor imediatamente após a publicação.</p>
+
+        <h3>4. Contato</h3>
+        <p>Se você tiver dúvidas sobre os Termos de Uso, entre em contato através da página <a href="{{ url_for('client.redes') }}">Contatos</a>.</p>
+    </div>
+</main>
+{% endblock %}

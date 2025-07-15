@@ -2,15 +2,22 @@
 {% block title %}Login{% endblock %}
 
 {% block body %}
-<main>
-    <form method="post" id="loginForm">
-        <label for="username">Nome de Usuário:</label>
-        <input type="text" name="username" id="username" autocomplete="username" maxlength="30" minlength="5" placeholder="username" required>
-        <label for="password">Senha:</label>
-        <input type="password" name="password" id="password" autocomplete="username" maxlength="18" minlength="8" placeholder="password" required>
-        <button type="submit" formaction="{{ url_for('client.login') }}" name="button">login</button>
-        <button type="submit" formaction="{{ url_for('client.cadastro') }}" name="button">cadastrar</button>
-    </form>
-    <div id="errorMsg" style="color: red;"></div>
+<main class="auth-section">
+    <div class="auth-card">
+        <h2>Entrar na Moderna Play</h2>
+        <form method="post" id="loginForm">
+            <label for="username">Nome de Usuário</label>
+            <input type="text" name="username" id="username" autocomplete="username" maxlength="30" minlength="5" placeholder="Digite seu usuário" required>
+
+            <label for="password">Senha</label>
+            <input type="password" name="password" id="password" autocomplete="current-password" maxlength="18" minlength="8" placeholder="Digite sua senha" required>
+
+            <div class="auth-buttons">
+                <button type="submit" formaction="{{ url_for('client.login') }}" name="button">Login</button>
+                <button type="submit" formaction="{{ url_for('client.cadastro') }}" class="register-btn" name="button">Cadastrar</button>
+            </div>
+        </form>
+        <div id="errorMsg" class="error-message">{{ mensagem_erro or '' }}</div>
+    </div>
 </main>
 {% endblock %}

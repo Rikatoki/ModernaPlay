@@ -2,5 +2,9 @@
     {
         "username": "Hanisson",
         "password": "scrypt:32768:8:1$hrMlPDvjMdwfiuhK$cf756eaa29c94f270ec85c40770d9c04949cee21328fe5a48c7a7e3797bb1619cea9dd593168522313049cfbe747f68a0974235471f3fdff51e7f844a72a6fd3"
+    },
+    {
+        "username": "Luana",
+        "password": "scrypt:32768:8:1$Olgzzuk2xki8W09c$99fb4f7bfd5cafbca73dce42df008de9d7bfa8337617cbc69271cc313cd9f5ee62e137349e02c1b27c7a479e4c166166fa586f832f2a95404eb61404b551bb9a"
     }
 ]

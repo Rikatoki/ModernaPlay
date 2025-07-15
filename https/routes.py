@@ -30,6 +30,18 @@ def sobre():
 def redes():
     return render_template('redes.html')
 
+@client_view.route('/termos')
+def termos():
+    return render_template('termos.html')
+
+@client_view.route('/privacidade')
+def privacidade():
+    return render_template('privacidade.html')
+
+@client_view.route('/logout', methods=['POST'])
+def logout():
+    session.clear()
+    return redirect(url_for('client.home'))
 
 @client_view.route('/login', methods=['GET','POST'])
 def login():
@@ -48,8 +60,7 @@ def login():
             for u in usuarios:
                 if user == u['username'] and check_password_hash(u['password'], senha):
                     session['username'] = user
-                    jogos = jogos()
-                    return jsonify({"redirect": url_for('client.home', username=session['username'], jogos=jogos())}), 200
+                    return jsonify({"redirect": url_for('client.home', username= session['username'])}), 200
             return jsonify({"mensagem": "Credenciais incorretas"}), 400
             
         #Cria a pasta e o arquivo do banco de dados caso ela não exista.

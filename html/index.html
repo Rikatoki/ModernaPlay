@@ -2,11 +2,23 @@
 {% block title %}Moderna Play{% endblock %}
 
 {% block body %}
-<main>
-    <h2>Bem vindo {{session['username']}}!</h2>
-    <section>
-        <h3>Jogos Populares</h3>
-        <div id="games">{% include 'jogos_populares.html'%}</div>
+<main class="main-container">
+    <h2 class="welcome-text">Bem-vindo {{session['username']}}!</h2>
+
+    <section class="section-games">
+        <h3 class="section-title">Jogos Populares</h3>
+        <div class="games-grid">
+            {% for jogo in jogos %}
+            {% if jogo.bom == "True" %}
+            <div class="game-card">
+                <a href="{{jogo.url}}" rel="external" target="_blank">
+                    <img src="{{jogo.img}}" alt="Capa do jogo {{jogo.nome}}" class="game-image">
+                    <details class="game-name">{{jogo.nome}}</details>
+                </a>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
     </section>
 </main>
 {% endblock %}
