@@ -7,7 +7,7 @@
     <div class="games-grid">
         {% for jogo in jogos %}
         <div class="game-card">
-            <a href="{{jogo.url}}" rel="external" target="_blank">
+            <a href="{{ url_for('client.produto_detalhe', nome=jogo.nome|replace(' ', '-')|lower) }}" rel="next">
                 <img src="{{jogo.img}}" alt="Capa do jogo {{jogo.nome}}" class="game-image">
                 <details class="game-name">{{jogo.nome}}</details>
             </a>

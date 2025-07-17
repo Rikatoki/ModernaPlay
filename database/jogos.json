@@ -3,54 +3,80 @@
         "nome": "Helltaker",
         "url": "https://store.steampowered.com/app/1289310/Helltaker/",
         "img": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1289310/header.jpg?t=1620755466",
-        "bom": "False" 
+        "bom": "False",
+        "preco": "0.00",
+        "descricao": "Um puzzle demoníaco com garotas do inferno e pancadaria por turnos."
     },
     {
         "nome": "Grimm's Hollow",
         "url": "https://store.steampowered.com/app/1170880/Grimms_Hollow/",
         "img": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1170880/header.jpg?t=1630243141",
-        "bom": "True" 
+        "bom": "True",
+        "preco": "0.00",
+        "descricao": "Explore o pós-vida em um RPG curto com alma e combate por turnos."
     },
     {
         "nome": "Splitgate",
         "url": "https://store.steampowered.com/app/677620/Splitgate/",
         "img": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/677620/header.jpg?t=1663343172",
-        "bom": "False" 
+        "bom": "False",
+        "preco": "Gratuito",
+        "descricao": "FPS competitivo com portais estilo Portal e combate rápido."
     },
     {
         "nome": "Gravitas",
         "url": "https://store.steampowered.com/app/1067310/Gravitas/",
         "img": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1067310/header.jpg?t=1676827574",
-        "bom": "False" 
-    },{
+        "bom": "False",
+        "preco": "0.00",
+        "descricao": "Um jogo de quebra-cabeças em primeira pessoa com um museu de gravidade."
+    },
+    {
         "nome": "Eldritchvania",
         "url": "https://store.steampowered.com/app/2423710/Eldritchvania/",
         "img": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2423710/header.jpg?t=1727266270",
-        "bom": "False" 
-    },{
+        "bom": "False",
+        "preco": "Indisponível",
+        "descricao": "Um metroidvania sombrio inspirado em horrores cósmicos e retro pixel art."
+    },
+    {
         "nome": "Hollow Knight",
         "url": "https://www.hollowknight.com",
         "img": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/367520/header.jpg?t=1695270428",
-        "bom": "True" 
-    },{
+        "bom": "True",
+        "preco": "37.99",
+        "descricao": "Explore cavernas profundas em um metroidvania desafiador e belíssimo."
+    },
+    {
         "nome": "Stardew Valley",
         "url": "https://www.stardewvalley.net",
         "img": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/413150/header.jpg?t=1711128146",
-        "bom": "True" 
-    },{
+        "bom": "True",
+        "preco": "24.99",
+        "descricao": "Construa sua fazenda dos sonhos e viva a vida no campo com estilo pixelado."
+    },
+    {
         "nome": "Emily Is Away",
         "url": "https://store.steampowered.com/app/417860/Emily_is_Away/",
         "img": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/417860/header.jpg?t=1619107266",
-        "bom": "False" 
-    },{
+        "bom": "False",
+        "preco": "Gratuito",
+        "descricao": "Simulador nostálgico de bate-papo que mergulha nos anos 2000."
+    },
+    {
         "nome": "Marvel Rivals",
         "url": "https://store.steampowered.com/app/2767030/Marvel_Rivals/?gad_source=1&gad_campaignid=22385758931&gclid=CjwKCAjw1dLDBhBoEiwAQNRiQYlkWjPZF-MXVH1-csbmGfTb8ZP2ow75f-IJwKw1vd1k9rEvcXNc5xoCWWUQAvD_BwE",
         "img": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2767030/a698e283eaff2837dd53726b5df702f7741849a1/header.jpg?t=1752231379",
-        "bom": "False" 
-    },{
+        "bom": "False",
+        "preco": "Em breve",
+        "descricao": "FPS multiplayer com heróis da Marvel em combates táticos de equipe."
+    },
+    {
         "nome": "Bongo Cat",
         "url": "https://store.steampowered.com/app/3419430/Bongo_Cat/",
         "img": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3419430/e8c9b865822618f3d3cd07757ddc60740c8e54b0/header.jpg?t=1751400210",
-        "bom": "True" 
+        "bom": "True",
+        "preco": "5.99",
+        "descricao": "Toque bongôs com um gatinho fofo em uma experiência musical relaxante."
     }
 ]

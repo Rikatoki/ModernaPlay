@@ -36,3 +36,9 @@ def termos():
 @client_view.route('/privacidade')
 def privacidade():
     return render_template('privacidade.html')
+
+@client_view.route('/produto/<nome>')
+def produto_detalhe(nome):
+    produtos = jogos()
+    produto = next((p for p in produtos if p['nome'].lower().replace(" ", "-") == nome.lower()), None)
+    return render_template('produto.html', produto=produto)

@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ produto.nome }}{% endblock %}
+
+{% block body %}
+<main class="produto-detalhe-section">
+    <div class="container detalhe-container">
+        <div class="imagem-container">
+            <img src="{{ produto.img }}" alt="Imagem de {{ produto.nome }}">
+        </div>
+        <div class="info-container">
+            <h2>{{ produto.nome }}</h2>
+            <p class="preco">Preço: R$ {{ produto.preco }}</p>
+            <p class="descricao">{{ produto.descricao }}</p>
+            <a href="{{ produto.url }}" class="btn-comprar" target="_blank">Ver na Loja</a>
+        </div>
+    </div>
+</main>
+{% endblock %}
