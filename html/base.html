@@ -18,7 +18,7 @@
                 <a href="{{ url_for('client.sobre') }}">Sobre</a>
                 <a href="{{ url_for('client.redes') }}">Contatos</a>
                 {% if session['username'] %}
-                <form action="{{ url_for('client.logout') }}" method="post" class="logout-form">
+                <form action="{{ url_for('user.logout') }}" method="post" class="logout-form">
                     <button type="submit">Logout</button>
                 </form>
                 {% endif %}

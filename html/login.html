@@ -13,8 +13,8 @@
             <input type="password" name="password" id="password" autocomplete="current-password" maxlength="18" minlength="8" placeholder="Digite sua senha" required>
 
             <div class="auth-buttons">
-                <button type="submit" formaction="{{ url_for('client.login') }}" name="button">Login</button>
-                <button type="submit" formaction="{{ url_for('client.cadastro') }}" class="register-btn" name="button">Cadastrar</button>
+                <button type="submit" formaction="{{ url_for('user.login') }}" name="button">Login</button>
+                <button type="submit" formaction="{{ url_for('user.cadastro') }}" class="register-btn" name="button">Cadastrar</button>
             </div>
         </form>
         <div id="errorMsg" class="error-message">{{ mensagem_erro or '' }}</div>

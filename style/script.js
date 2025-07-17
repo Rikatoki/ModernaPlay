@@ -38,7 +38,7 @@ document.getElementById('loginForm').addEventListener('submit', async function (
     }
 });
 
-console.log("Script da Moderna Play carregado com sucesso ✅");
+console.log("Alfredo");
 
 // Animação para links do header (opcional)
 document.querySelectorAll('.main-nav a').forEach(link => {

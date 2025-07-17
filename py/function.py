@@ -8,10 +8,10 @@ def login_required(f):
     from functools import wraps
     @wraps(f)
     def decorated_function(*arg, **kwargs):
-        from https.routes import session
+        from https.form import session
         if 'username' not in session:
             from flask import redirect,url_for
-            return redirect(url_for('client.login'))
+            return redirect(url_for('user.login'))
         return f(*arg, **kwargs)
     return decorated_function
 
