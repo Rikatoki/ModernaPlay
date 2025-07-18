@@ -33,7 +33,7 @@ Este é um projeto de um site de e-commerce fictício, com foco educacional e ex
 ## ⚠️ Observações
 
 - O projeto usa arquivos \`.json\` como base de dados para simplificação (ideal para aprendizado).
-- É houve integração com **SQLite** na produção.
+- É houve integração com **SQLAlchemy** na produção.
 - O front-end foi totalmente desenvolvido por I.A.
 
 ---
