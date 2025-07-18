@@ -1,44 +1,45 @@
 from flask import Blueprint, render_template, url_for, redirect
-from py.function import login_required, jogos
+from app.utils.file_utils import jogos_json
+from app.services.auth_service import login_required
 
 
 
-client_view = Blueprint('client',__name__)
+user_bp = Blueprint('client',__name__)
 
-@client_view.route('/', methods=['GET','POST'])
+@user_bp.route('/', methods=['GET','POST'])
 def verif_login():
     return redirect(url_for('client.home'))
     
 #login_required garante que o usuário tenha feito um login.
-@client_view.route('/home')
+@user_bp.route('/home')
 @login_required
 def home():
-    return render_template('index.html', jogos=jogos())
+    return render_template('index.html', jogos=jogos_json())
 
-@client_view.route('/loja')
+@user_bp.route('/loja')
 @login_required
 def loja():
-    return render_template('loja.html',jogos=jogos())
+    return render_template('loja.html',jogos=jogos_json())
 
-@client_view.route('/sobre_nós')
+@user_bp.route('/sobre_nós')
 @login_required
 def sobre():
     return render_template('sobre.html')
 
-@client_view.route('/Contatos')
+@user_bp.route('/Contatos')
 def redes():
     return render_template('redes.html')
 
-@client_view.route('/termos')
+@user_bp.route('/termos')
 def termos():
     return render_template('termos.html')
 
-@client_view.route('/privacidade')
+@user_bp.route('/privacidade')
 def privacidade():
     return render_template('privacidade.html')
 
-@client_view.route('/produto/<nome>')
+@user_bp.route('/produto/<nome>')
 def produto_detalhe(nome):
-    produtos = jogos()
+    produtos = jogos_json()
     produto = next((p for p in produtos if p['nome'].lower().replace(" ", "-") == nome.lower()), None)
     return render_template('produto.html', produto=produto)
