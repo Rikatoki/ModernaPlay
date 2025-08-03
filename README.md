@@ -1,51 +1,73 @@
-# 🛒 Projeto E-commerce Flask
+# ModernaPlay
 
-Este é um projeto de um site de e-commerce fictício, com foco educacional e experimental. O **front-end foi gerado com auxílio de Inteligência Artificial**, enquanto **todo o back-end foi desenvolvido manualmente utilizando Python com o framework Flask**.
+ModernaPlay é um site desenvolvido como parte de um trabalho escolar, com o objetivo de criar um site e-commerce. O projeto não foi pensado para ser funcional ou utilizado como uma plataforma real, mas sim como exercício acadêmico e demonstração de conceitos básicos de back-end, front-end e organização de código.
+
+## Sobre o Projeto
+
+- **Proposto para fins didáticos**: O ModernaPlay serve apenas como exemplo para apresentação em colégio.
+- **Listagem de jogos**: O site exibe uma lista de jogos com imagens, descrição, preço e links externos.
+- **Autenticação de usuários**: Inclui um sistema básico de cadastro e login (não recomendado para uso real).
+- **Estrutura modular**: O código está organizado em módulos para facilitar entendimento e aprendizado.
+
+## Estrutura de Pastas
+
+```
+app/
+├── __init__.py
+├── config.py
+├── data/
+│   └── jogos.json
+├── models/
+│   ├── __init__.py
+│   └── user.py
+├── routes/
+│   └── (rotas de autenticação, usuário, etc.)
+├── services/
+│   └── (serviços auxiliares)
+├── static/
+│   └── imgs/
+```
+
+## Como Executar Localmente
+
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/Rikatoki/ModernaPlay.git
+   cd ModernaPlay
+   ```
+
+2. **Crie e ative um ambiente virtual:**
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # Linux/macOS
+   venv\Scripts\activate     # Windows
+   ```
+
+3. **Instale as dependências:**
+   ```bash
+   pip install flask flask_sqlalchemy
+   ```
+
+4. **Execute a aplicação:**
+   ```bash
+   flask run
+   ```
+   O site estará disponível localmente e pode ser explorado para fins de apresentação.
+
+## Observações Importantes
+
+- **Não utilize para fins comerciais ou reais!**
+- As informações de usuários e jogos são apenas exemplos e não possuem proteção adequada.
+- O foco é mostrar conceitos básicos de desenvolvimento web e organização de projetos em Python.
+
+## Licença
+
+Distribuído sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais informações.
+
+## Autor
+
+Hanisson Silva Pereira // Rikatoki
 
 ---
 
-## 🔧 Tecnologias Utilizadas
-
-- **Python 3**
-- **Flask**
-- **Jinja2**
-- **SQLite (via SQLite3 ou arquivos JSON simulando banco)**
-- **HTML/CSS/JS (gerado com IA)**
-- **Werkzeug** (hash de senha)
-- **Blueprints do Flask** (modularização)
-- **Sistema de Sessão com Flask**
-
----
-
-## ✅ Funcionalidades
-
-- 🔐 Sistema de **login e cadastro com hash de senha**
-- 🛒 Páginas protegidas com \`@login_required\`
-- 🧾 Visualização de **produtos** simulados
-- 🔎 Página individual para cada produto
-- 📃 Páginas institucionais: Sobre Nós, Contatos, Termos e Privacidade
-- 🚪 Logout com \`session.clear()\`
-- ⚙️ Armazenamento simples usando JSON
-
-
----
-
-## ⚠️ Observações
-
-- O projeto usa arquivos \`.json\` como base de dados para simplificação (ideal para aprendizado).
-- É houve integração com **SQLAlchemy** na produção.
-- O front-end foi totalmente desenvolvido por I.A.
-
----
-
-## ✨ Créditos
-
-- **Back-end:** Desenvolvido manualmente por [Rikatoki]
-- **Front-end:** Gerado com auxílio de IA (como o ChatGPT)
-- **Framework:** Flask + Jinja2
-
----
-
-## 📜 Licença
-
-Este projeto é de código aberto, distribuído sob a [MIT License](https://opensource.org/licenses/MIT).
+Este projeto foi feito exclusivamente para um trabalho escolar. Se quiser aprender ou contribuir, fique à vontade!
